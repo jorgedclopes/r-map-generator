@@ -1,0 +1,14 @@
+[
+  {
+    "status":  "Pariah",
+    "amount": 1,
+    "color":"grey",
+    "connection_number": [1, 1]
+  },
+  {
+    "status":  "Plebeian",
+    "amount": 0,
+    "color":"greenyellow",
+    "connection_number": [2, 2]
+  }
+]

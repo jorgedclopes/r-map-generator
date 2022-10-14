@@ -1,0 +1,26 @@
+[
+  {
+    "status":  "Pariah",
+    "amount": 3,
+    "color":"grey",
+    "connection_number": [1, 1]
+  },
+  {
+    "status":  "Plebeian",
+    "amount": 0,
+    "color":"greenyellow",
+    "connection_number": [1, 3]
+  },
+  {
+    "status":  "Patrician",
+    "amount": 0.2,
+    "color":"turquoise",
+    "connection_number": [2, 4]
+  },
+  {
+    "status":  "Princep",
+    "amount": 2,
+    "color":"tomato",
+    "connection_number": [3, 6]
+  }
+]

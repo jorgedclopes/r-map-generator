@@ -1,0 +1,23 @@
+{
+  "type": "array",
+  "items" : {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "amount": {
+        "type": "number"
+      },
+      "color": {
+        "type": "string"
+      },
+      "connection_number": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}
