@@ -1,0 +1,22 @@
+{
+    "The Devil": {
+        "move": "Regicide",
+        "affinity": {"direction": "from", "target": "Prince", "magnitude": 2}
+    },
+    "The Nightmare": {
+        "move": "Blackmail",
+        "affinity": {"direction": "to", "target": "any", "magnitude": 2}
+    },
+    "The Puppet Master": {
+        "move": "Mogul",
+        "affinity": {"direction": "both", "target": "any", "magnitude": 3}
+    },
+    "The Sensualist": {
+        "move": "Bacchanal",
+        "affinity": {"direction": "both", "target": "any", "magnitude": 1}
+    },
+    "The Wolf": {
+        "move": "Alpha",
+        "affinity": {"direction": "both", "target": "The Wolf", "magnitude": 5}
+    }
+}
