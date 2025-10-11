@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 import inspect
-from typing import Union, Tuple
+from typing import Union, Tuple, Optional
 
 
 @dataclass(frozen=True)
@@ -19,14 +19,14 @@ class NodeAttributes:
 class Individual(NodeAttributes):
     id: str
     name: str
+    playbook: Optional[str]
     connections: Tuple = ()
 
     @classmethod
     def from_dict(cls, env):
-        return cls(**{
-            k: v for k, v in env.items()
-            if k in inspect.signature(cls).parameters
-        })
+        return cls(
+            **{k: v for k, v in env.items() if k in inspect.signature(cls).parameters}
+        )
 
 
 @dataclass(frozen=True)
