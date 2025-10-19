@@ -16,7 +16,11 @@ from utils import read_populations, transform_number_of_nodes, flatten
 
 def generate_nodes(
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     total_nodes: int, populations: Tuple[Population], playbooks: Dict[str, str]
+=======
+    total_nodes: int, populations: Tuple[Population]
+>>>>>>> Stashed changes
 =======
     total_nodes: int, populations: Tuple[Population]
 >>>>>>> Stashed changes
