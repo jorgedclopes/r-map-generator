@@ -15,7 +15,11 @@ from utils import read_populations, transform_number_of_nodes, flatten
 
 
 def generate_nodes(
+<<<<<<< Updated upstream
     total_nodes: int, populations: Tuple[Population], playbooks: Dict[str, str]
+=======
+    total_nodes: int, populations: Tuple[Population]
+>>>>>>> Stashed changes
 ) -> Tuple[Individual]:
     default_populations = tuple(el for el in populations if el.amount == 0)
 

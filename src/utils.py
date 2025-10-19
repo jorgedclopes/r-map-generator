@@ -15,6 +15,7 @@ def transform_number_of_nodes(number, total):
 
 
 # TODO: add defaults
+<<<<<<< Updated upstream
 def read_populations(schema_file="./schema.json", population_file="./populations.json"):
     cwd = os.getcwd()
     with open(os.path.abspath(os.path.join(cwd, schema_file))) as s, open(
@@ -29,6 +30,20 @@ def read_populations(schema_file="./schema.json", population_file="./populations
                 entry["connection_number"][0], entry["connection_number"][1]
             )
         return tuple(Population(**entry) for entry in data)
+=======
+def read_populations():
+    with open("schema.json") as s, open("populations.json") as f:
+        data_array = json.load(f)
+        schema = json.load(s)
+        print(schema)
+        print(data_array)
+        validate(instance=data_array, schema=schema)
+        for data in data_array:
+            data["connection_number"] = Pair(
+                data["connection_number"][0], data["connection_number"][1]
+            )
+        return tuple(Population(**data) for data in data_array)
+>>>>>>> Stashed changes
 
 
 def read_playbooks(playbook_file="./playbooks.json"):
